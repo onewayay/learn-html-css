@@ -1,0 +1,14 @@
+/* 주석입니다~ */
+body {
+  background-color: yellow;
+  /* color: green; */
+
+  /* rgba 방식 */
+  color: rgba(0, 0, 255, 0.5);
+
+  /* hsla 방식
+  color: hsla(180, 50%, 50%, 1); */
+
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: Arial, Helvetica, sans-serif;
+}
