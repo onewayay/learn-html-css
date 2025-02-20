@@ -1,0 +1,13 @@
+.member-service {
+  text-transform: uppercase;
+  font: 1.125rem, suit, sans-serif;
+  a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:not(:last-child)::after {
+    content: ':';
+  }
+}

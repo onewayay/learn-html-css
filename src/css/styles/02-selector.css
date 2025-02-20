@@ -1,0 +1,75 @@
+body {
+  background-color: #ffc;
+}
+/** 태그 선택자 **/
+p {
+  color: red;
+
+  &:hover {
+    background-color: skyblue;
+  }
+
+  &:focus {
+    border: 10px solid red;
+  }
+}
+
+/** 클래스 선택자 **/
+.like {
+  color: green;
+}
+
+/** 아이디 선택자 **/
+#lion {
+  color: blue;
+}
+
+/** 속성선택자 **/
+[title] {
+  color: purple;
+}
+
+/* [title='선택자를 정복하자!'] {
+  color: purple;
+} */
+
+a[href^='https'] {
+  text-decoration: none;
+}
+
+a[href$='pdf'] {
+  background-color: violet;
+}
+
+/** 가상 클래스 선택자 **/
+/* 방문한적 없는 링크 */
+a:link {
+  color: black;
+}
+/* 방문한적 있는 링크 */
+a:visited {
+  color: olive;
+}
+/* hover 했을 때 */
+a:hover {
+  color: blue;
+}
+
+/* focus 됐을 때 */
+a:focus {
+  color: aqua;
+}
+
+/* active 될 때 (ex)클릭하는 순간) */
+a:active {
+  color: chartreuse;
+}
+
+/** 가상 요소 선택자 **/
+h1::before {
+  content: '멋사';
+}
+
+h1::after {
+  content: '13기';
+}

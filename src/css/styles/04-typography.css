@@ -1,0 +1,29 @@
+:root {
+  font-size: clamp(12px, 3vs, 24px);
+}
+
+/* font-family 속성 - 글꼴 */
+body {
+  /* font-family: 'Pretendard Variable'; */
+  font-family: 'SUIT', sans-serif;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/* 폰트 관련 속성 - 글자 크기, 굵기, 기울임꼴 */
+.size {
+  font-size: 150%;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  font-variant: small-caps;
+  font-family: 'pretendard variable', sans-serif;
+  /* font: bold italic small-caps 24px /1.5 'pretendard variable'; */
+  color: green;
+}
+
+/* 단위 */
