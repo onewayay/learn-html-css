@@ -1,0 +1,28 @@
+/** background 속성 **/
+
+html * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  /* background-color: hsl(180, 50%, 50%);
+  background-image: url(/src/assets/images/rabbit.png);
+  background-repeat: no-repeat;
+  background-position: center left 50px;
+  background-attachment: fixed;
+  background-size: contain; */
+
+  /* 단축 표기법 */
+  /* background: hsl(180, 50%, 50%) url(/src/assets/images/rabbit.png) no-repeat
+    center left 50px / contain fixed; */
+  background:
+    url(/src/assets/images/rabbit.png) no-repeat center left 50px / contain
+      fixed,
+    url(/src/assets/images/cloud.png) no-repeat center left 150px / contain
+      fixed,
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    hsl(180, 50%, 50%);
+}
