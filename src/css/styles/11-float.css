@@ -1,0 +1,31 @@
+@import '/src/common/theme.css';
+
+/** float **/
+
+.card {
+  background-color: var(--pastel-pink);
+  border: 1px solid green;
+
+  .thumbnail {
+    background-color: var(--pastel-yellow);
+    display: flow-root;
+    /* overflow: hidden; */
+    /* height: 141px; */
+
+    img {
+      /* display: block; */
+      vertical-align: middle;
+      width: 100px;
+      float: left;
+    }
+  }
+
+  .subject {
+    background-color: var(--pastel-blue);
+  }
+
+  .content {
+    clear: both;
+    background-color: var(--pastel-orange);
+  }
+}

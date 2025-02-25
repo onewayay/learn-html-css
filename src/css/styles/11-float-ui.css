@@ -1,0 +1,53 @@
+@import '/src/common/modern-reset.css';
+
+body {
+  font-family: SUIT, snas-serif;
+}
+
+.card {
+  margin: 2em;
+  padding: 2em;
+  border: 1px solid #aaa;
+  border-radius: 0.5rem;
+
+  &.good-partner {
+    display: flow-root;
+  }
+
+  .subject {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    span {
+      vertical-align: top;
+
+      &[lang='en'] {
+        font-size: 0.5em;
+      }
+    }
+  }
+
+  .thumbnail {
+    --radius: 50%;
+
+    float: left;
+    margin: 1em;
+    padding: 0.625em;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+    shape-outside: circle(50%);
+
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: var(--radius);
+      object-fit: cover;
+      object-position: 0 -20px;
+    }
+  }
+
+  .content {
+    margin-top: 10px;
+  }
+}

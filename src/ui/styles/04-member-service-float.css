@@ -1,0 +1,89 @@
+body {
+  font-family: SUIT, sans-serif;
+}
+
+/* 내 버전 */
+/* .member-service {
+  display: flow-root;
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+    float: left;
+    color: black;
+
+    &:not(:last-child)::after {
+      content: '|';
+      margin: 0 20px;
+    }
+  }
+}
+
+.member-link {
+  float: right;
+  display: flow-root;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+
+  li {
+    float: left;
+
+    a {
+      display: inline-block;
+      margin: 0 20px;
+      text-decoration: none;
+      color: black;
+    }
+  }
+} */
+
+/* 강사님 버전*/
+
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
+.member-service {
+  display: flow-root;
+
+  a {
+    float: left;
+    text-transform: uppercase;
+
+    &:not(:first-child)::before {
+      content: '|';
+      margin: 0 0.5em;
+    }
+  }
+}
+
+.member-link {
+  display: flow-root;
+
+  li {
+    float: left;
+
+    span {
+      float: left;
+      margin: 0 0.5em;
+    }
+
+    a {
+      float: left;
+      text-transform: uppercase;
+    }
+  }
+}
