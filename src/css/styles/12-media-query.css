@@ -1,0 +1,28 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/a11y.css';
+
+/** 미디어 쿼리 **/
+
+/* 기본 적용 */
+body {
+  background-color: yellow;
+
+  /* 최소 .75rem, 최대 2rem, 유동크기 2vw*/
+  font-size: clamp(0.75rem, 2vw, 2rem);
+
+  /* 뷰포트 크기에 따라 적용*/
+  /* 가로 600px 이상 */
+  @media (min-width: 600px) {
+    background-color: pink;
+  }
+
+  /* 가로 1000px 이상 */
+  @media (min-width: 1000px) {
+    background-color: lime;
+  }
+
+  /* 가로 보기 모드에 적용*/
+  /* @media (orientation: landscape) {
+    background-color: orange;
+  } */
+}

@@ -1,0 +1,78 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
+
+/** 반응형 레이아웃 **/
+
+/* 헤더 */
+.header {
+  height: 15vh;
+  background-color: var(--pastel-coral);
+}
+
+/* 네비게이션, 메인 컨텐츠, 사이드바 컨테이너*/
+.nav-main-aside-wrapper {
+  @media (min-width: 1024px) {
+    display: flow-root;
+  }
+}
+
+/* 네비게이션 */
+.navigation {
+  height: 20vh;
+  background-color: var(--pastel-green);
+
+  @media (min-width: 1024px) {
+    float: left;
+    width: 30%;
+    height: 70vh;
+  }
+}
+
+/* 메인 컨텐츠 및 사이드바 컨테이너 */
+.content-wrapper {
+  @media (min-width: 768px) {
+    display: flow-root;
+  }
+  @media (min-width: 1024px) {
+    float: left;
+    width: 70%;
+  }
+}
+
+/* 메인 컨텐츠 */
+.content {
+  height: 30vh;
+  background-color: var(--pastel-aqua);
+
+  @media (min-width: 768px) {
+    float: left;
+    width: 50%;
+    height: 50vh;
+  }
+  @media (min-width: 1024px) {
+    width: 60%;
+    height: 70vh;
+  }
+}
+
+/* 사이드 바 */
+.sidebar {
+  height: 20vh;
+  background-color: var(--pastel-yellow);
+
+  @media (min-width: 768px) {
+    float: left;
+    width: 50%;
+    height: 50vh;
+  }
+  @media (min-width: 1024px) {
+    width: 40%;
+    height: 70vh;
+  }
+}
+
+/* 푸터 */
+.footer {
+  height: 15vh;
+  background-color: var(--pastel-lavender);
+}
