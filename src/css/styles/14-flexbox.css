@@ -1,0 +1,92 @@
+@import '/src/common/theme.css';
+
+html,
+body {
+  font-family: 'SUIT', sans-serif;
+}
+
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+/** flex box **/
+
+/* 플렉스 컨테이너 (부모) 관련 속성 */
+.case-01 {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+
+  /* flex-direction, flex-wrap 를 합친 단축 표기법 */
+  flex-flow: wrap row;
+
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+
+  gap: 20px;
+
+  border: 1px solid red;
+  /* padding: 10px; */
+  inline-size: 622px;
+  block-size: 522px;
+
+  [class*='item'] {
+    /* margin-block: 10px; */
+    background-color: var(--pastel-yellow);
+    /* inline-size: 100px;
+    block-size: 100px; */
+    text-align: center;
+    align-content: center;
+
+    border: 1px solid black;
+
+    /* 기존에 세로 기준 가운데 정렬을 지원하지 않을 때 트릭 */
+    /* line-height: 100px;; */
+  }
+
+  .item1 {
+    /* inline-size: 200px; */
+    font-size: 48px;
+  }
+
+  .item2 {
+    font-size: 30px;
+  }
+}
+
+/* 플렉스 아이템 (자식) 관련 속성 */
+
+.case-02 {
+  border: 1px solid green;
+  width: 502px;
+  inline-size: 502px;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  [class^='item'] {
+    border: 1px solid currentColor;
+    /* width: 100px;
+    inline-size: 100px;
+    height: 100px; */
+
+    /* 가운데 정렬 */
+    text-align: center;
+    align-content: center;
+
+    /* flex-basis: 200px;
+    flex-shrink: 1;
+    flex-grow: 1; */
+    /*f lex-grow, flex-shrink, flex-basis 의 단축 표기 */
+    flex: 0 1 150px;
+
+    /* 짝수만 앞쪽으로 정렬*/
+    &:nth-child(even) {
+      order: -1;
+      /* flex-grow: 2; */
+    }
+  }
+}
