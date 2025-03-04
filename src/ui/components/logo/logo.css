@@ -1,0 +1,31 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/login-theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* 로고 컴포넌트 (svg 요소) */
+.logo {
+  --size: 14.375rem;
+
+  display: block;
+  width: var(--size, 14.375rem);
+  inline-size: var(--size, 14.375rem);
+
+  /* modern reset에 img, picture만 display:block, max-width:100% 가 들어가 있다.*/
+  svg {
+    display: block;
+    width: 100%;
+    inline-size: 100%;
+    height: auto;
+    block-size: auto;
+  }
+}
+
+/* 로고 컴포넌트 (img 요소) */
+.logo {
+  --size: 14.375rem;
+
+  display: block;
+  width: var(--size, 14.375rem);
+  inline-size: var(--size, 14.375rem);
+}

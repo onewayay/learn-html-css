@@ -1,0 +1,32 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/login-theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+form {
+  display: contents;
+
+  fieldset {
+    display: contents;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/** 입력 서식 컴포넌트 **/
+.input {
+  background-color: yellow;
+  position: relative;
+
+  p {
+    position: absolute;
+    bottom: 0;
+    inset-block-end: 0;
+    left: 0;
+    inset-inline-start: 0;
+    translate: 0 150%;
+    font-size: var(--font-xs);
+    color: var(--red-500);
+  }
+}
