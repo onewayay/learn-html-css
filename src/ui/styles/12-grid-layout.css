@@ -1,0 +1,97 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+
+/** 그리드 레이아웃 **/
+
+/* .container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10vh 15vh 40vh 25vh 10vh;
+
+  .header {
+    background: var(--pastel-coral);
+    grid-row: 1 / 2;
+    grid-column: 1 / span 12;
+  }
+
+  .navigation {
+    background: var(--pastel-green);
+  }
+
+  .content {
+    background: var(--pastel-aqua);
+  }
+
+  .sidebar {
+    background: var(--pastel-yellow);
+  }
+
+  .footer {
+    background: var(--pastel-lavender);
+  }
+} */
+
+/*강사님 */
+
+.header {
+  background: var(--pastel-coral);
+  height: 10vh;
+}
+
+.navigation {
+  background: var(--pastel-green);
+  height: 15vh;
+}
+
+.content {
+  background: var(--pastel-aqua);
+  height: 40vh;
+}
+
+.sidebar {
+  background: var(--pastel-yellow);
+  height: 25vh;
+}
+
+.footer {
+  background: var(--pastel-lavender);
+  height: 10vh;
+}
+
+.container {
+  display: grid;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 800px;
+    max-inline-size: 800px;
+    margin: 0 auto;
+
+    .header,
+    .navigation,
+    .footer {
+      /* -1은 맨뒤*/
+      grid-column: 1 / -1;
+    }
+
+    .content,
+    .sidebar {
+      grid-column: span 6;
+      height: 40vh;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1280px;
+    max-inline-size: 1280px;
+
+    .navigation,
+    .sidebar {
+      grid-column: span 3;
+      height: 40vh;
+    }
+  }
+}
